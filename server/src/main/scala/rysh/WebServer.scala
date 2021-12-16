@@ -1,4 +1,4 @@
-package com.example.akkahttpscalajs
+package rysh
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http

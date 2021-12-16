@@ -1,7 +1,7 @@
-package com.example.akkahttpscalajs
+package rysh
 
-import com.example.akkahttpscalajs.shared.SharedMessages
 import org.scalajs.dom
+import rysh.shared.SharedMessages
 
 object ScalaJSExample {
 

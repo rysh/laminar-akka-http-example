@@ -1,4 +1,4 @@
-package com.example.akkahttpscalajs
+package rysh
 
 import akka.http.scaladsl.server.Directives
 

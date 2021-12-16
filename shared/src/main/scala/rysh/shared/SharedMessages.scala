@@ -1,4 +1,4 @@
-package com.example.akkahttpscalajs.shared
+package rysh.shared
 
 object SharedMessages {
   def itWorks = "It works!"
