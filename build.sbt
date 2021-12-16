@@ -19,7 +19,7 @@ lazy val server = project
     Assets / WebKeys.packagePrefix := "public/",
     Runtime / managedClasspath += (Assets / packageBin).value
   )
-  .enablePlugins(SbtWeb, SbtTwirl, JavaAppPackaging)
+  .enablePlugins(SbtWeb, JavaAppPackaging)
   .dependsOn(shared.jvm)
 
 lazy val client = project

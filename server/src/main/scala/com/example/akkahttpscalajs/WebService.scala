@@ -1,8 +1,6 @@
 package com.example.akkahttpscalajs
 
 import akka.http.scaladsl.server.Directives
-import com.example.akkahttpscalajs.shared.SharedMessages
-import com.example.akkahttpscalajs.twirl.Implicits._
 
 class WebService() extends Directives {
 
