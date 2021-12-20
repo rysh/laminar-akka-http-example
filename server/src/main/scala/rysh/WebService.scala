@@ -5,10 +5,16 @@ import akka.http.scaladsl.server.Directives
 class WebService() extends Directives {
 
   val route = {
-    pathSingleSlash {
-      get {
-        getFromResource("index.html")
-      }
+    get {
+        pathSingleSlash {
+          getFromResource("index.html")
+        } ~
+        path("ping") {
+          complete("PONG!")
+        } ~
+        path("crash") {
+          sys.error("BOOM!")
+        }
     } ~
       pathPrefix("assets" / Remaining) { file =>
         // optionally compresses the response with Gzip or Deflate
